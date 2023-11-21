@@ -1,6 +1,5 @@
-
 import { Request, Response } from 'express';
-// altered import
+
 import * as coffeeService from '../services/coffee_service';
 export const getCoffee = async (
     req: Request<object, object, object, { coffeeName: string | undefined }>,
