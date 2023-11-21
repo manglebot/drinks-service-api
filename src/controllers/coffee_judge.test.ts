@@ -1,3 +1,7 @@
+import request from 'supertest';
+import { app } from '../app';
+
+
 // As a user, when I do a GET request to the /coffeelover endpoint, I will see a string message as a response which says I like coffee!
 
 describe('Test /coffeelover endpoint request', () => {
