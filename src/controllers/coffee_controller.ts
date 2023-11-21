@@ -9,6 +9,6 @@ export const getCoffee = async (
      res.json(coffee).status(200);
 };
 
-export const coffeeLover = async (res:Response) => res.send('I like coffee!');
+export const coffeeLover = async (req: Request, res: Response) => res.send('I like coffee!');
 
-export const dracula = async (res:Response) => res.send("I don't drink... coffee.");
+export const dracula = async (req: Request, res: Response) => res.send("I don't drink... coffee.");
