@@ -12,3 +12,4 @@ export const getCoffee = async (
 
 export const coffeeLover = async (res:Response) => res.send('I like coffee!');
 
+export const dracula = async (res:Response) => res.send("I don't drink... coffee.");
