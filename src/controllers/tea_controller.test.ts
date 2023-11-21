@@ -23,3 +23,15 @@ test('GET /tea teaName not supplied so default should be returned ', async () =>
     name: 'Earl Grey',
   });
 });
+
+test('GET /tea should return correct object', async () => {
+  const res = await request(app)
+  .get('/tea')
+  .query({ teaName: 'Darjeeling' });
+
+  expect(res.statusCode).toEqual(200);
+  expect(res.body).toEqual({
+    drinkType: 'Tea',
+    name: 'Darjeeling',
+  });
+});
