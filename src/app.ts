@@ -7,15 +7,4 @@ app.use(express.json());
 
 app.get('/', (req, res) => res.send('Welcome to the Drinks API!'));
 
-
-
-
-
-
-// Just leaving comments for my own learning!!
-// app.get('/coffee', (req, res) => res.json({
-//     drinkType: 'Coffee',
-//     name: 'Latte',
-// }));
 app.use('/', router);
-
